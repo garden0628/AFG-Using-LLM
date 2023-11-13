@@ -17,10 +17,13 @@
             <div class="inputs">
                 <div class="problem-description">
                     <h1><img src="images/edit-info.png" alt="">Problem Description</h1>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <textarea></textarea>
                 </div>
                 <div class="program-testcases">
                     <h1><img src="images/testing.png" alt="">Test Cases</h1>
+                    <div class="program-testcase-btn">
+                        <button>ADD TEST CASE</button>
+                    </div>
                 </div>
             </div>
 
@@ -29,10 +32,17 @@
                     <img src="images/coding.png" alt="">
                     Wrong Program Code
                 </div>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                <button></button>
+                <div class="editor" id="editor"></div>
+                <div class="generate-feedback-btn">
+                    <button onclick="generateFeedback()">GENERATE FEEDBACK</button>
+                </div>
             </div>
         </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/lib/ace.js"></script>
+    <script src="js/lib/theme-monokai.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
