@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
     <title>Automatic Feedback Generation</title>
 </head>
 <body>
@@ -17,12 +18,14 @@
             <div class="inputs">
                 <div class="problem-description">
                     <h1><img src="images/edit-info.png" alt="">Problem Description</h1>
-                    <textarea></textarea>
+                    <textarea id="description-content" 
+                    placeholder="Fill in the blank with problem description"></textarea>
                 </div>
                 <div class="program-testcases">
                     <h1><img src="images/testing.png" alt="">Test Cases</h1>
+                    <div class="testcase-container" id="testcase-container"></div>
                     <div class="program-testcase-btn">
-                        <button>ADD TEST CASE</button>
+                        <button onclick="addTestCase()">ADD TEST CASE</button>
                     </div>
                 </div>
             </div>
@@ -43,6 +46,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/lib/ace.js"></script>
     <script src="js/lib/theme-monokai.js"></script>
-    <script src="js/main.js"></script>
 </body>
 </html>
