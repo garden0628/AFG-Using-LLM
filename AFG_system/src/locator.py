@@ -1,7 +1,7 @@
-from src.tester import Tester
-from src.utils import regularize, get_stmt_list
-from src.unittests import Tracing
-from src.results import Results
+from AFG_system.src.tester import Tester
+from AFG_system.src.utils import regularize, get_stmt_list
+from AFG_system.src.unittests import Tracing
+from AFG_system.src.results import Results
 
 class Locator:
     def __init__(self, tester:Tester, success:str='Success'):
@@ -51,7 +51,7 @@ class Locator:
             test_hist[testcase_no] = Results.status
             trace_hist[testcase_no] = Results.exec_traces
 
-            if Results.status != self.__success:
+            if Results.status != self.success:
                 failed_tcs.append(testcase)
 
         stmt_list = get_stmt_list(code)

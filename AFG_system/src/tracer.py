@@ -1,5 +1,5 @@
 import sys, trace, threading
-from src.results import Results
+from AFG_system.src.results import Results
 
 class Tracer(trace.Trace):
     """

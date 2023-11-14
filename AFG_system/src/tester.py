@@ -1,7 +1,7 @@
-from src.testsuite import TestSuite
-from src.utils import regularize, get_stmt_list
-from src.results import Results
-from src.unittests import RunUnitTest
+from AFG_system.src.testsuite import TestSuite
+from AFG_system.src.utils import regularize, get_stmt_list
+from AFG_system.src.results import Results
+from AFG_system.src.unittests import RunUnitTest
 
 class Tester:
     def __init__(self, testcases:list, timeout:int=1):

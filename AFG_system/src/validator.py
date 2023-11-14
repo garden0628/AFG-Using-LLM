@@ -1,7 +1,7 @@
-from src.tester import Tester
-from src.utils import regularize
-from src.unittests import Validating
-from src.results import Results
+from AFG_system.src.tester import Tester
+from AFG_system.src.utils import regularize
+from AFG_system.src.unittests import Validating
+from AFG_system.src.results import Results
 
 import re
 

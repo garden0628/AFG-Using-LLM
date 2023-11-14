@@ -3,9 +3,9 @@ from io import StringIO
 from unittest.mock import patch, mock_open
 from timeout_decorator import timeout
 
-from src.results import Results
-from src.manager import Manager
-from src.tracer import Tracer
+from AFG_system.src.results import Results
+from AFG_system.src.manager import Manager
+from AFG_system.src.tracer import Tracer
 
 
 class TextTestResult(unittest.TextTestResult):

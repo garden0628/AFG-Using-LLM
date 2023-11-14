@@ -1,5 +1,3 @@
-import os
-
 class Dataset:
     testcases = []
     wrong_prog = ''
