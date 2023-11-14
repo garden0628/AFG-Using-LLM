@@ -15,8 +15,12 @@ function getTextAreaValues() {
     return values;
 }
 
-function appendToForm(form, content) {
+function appendToForm(form, value, key) {
     var hiddenField = document.createElement('input');
+    hiddenField.setAttribute('type', 'hidden');
+    hiddenField.setAttribute('name', key);
+    hiddenField.setAttribute('value', value);
+    form.appendChild(hiddenField);
 }
 
 function sendInputs(description_content, code, testcases) {
@@ -28,6 +32,9 @@ function sendInputs(description_content, code, testcases) {
     appendToForm(form, description_content, "Description");
     appendToForm(form, code, "Wrong_Program");
     appendToForm(form, testcases, "TestCases");
+
+    document.body.appendChild(form);
+    form.submit();
 }
 
 function generateFeedback() {
