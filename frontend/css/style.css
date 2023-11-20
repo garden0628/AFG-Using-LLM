@@ -1,10 +1,3 @@
-:root {
-    --dark-blue: #14007a;
-    --blue: #1a009c;
-    --light-blue: rgb(74, 225, 255);
-    --pink: rgb(255, 40, 113);
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -18,10 +11,14 @@ body {
 }
 
 .system-title {
-    font: 800 2.3rem sans-serif;
-    text-align: center;
-    margin: 1.5rem .5rem .5rem .5rem;
+    font: 800 2.0rem sans-serif;
+    text-align: left;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    padding: .5rem;
+    width: 90vw;
     color: black;
+    border-bottom: 1px solid black;
 }
 
 .system-component {
@@ -29,7 +26,7 @@ body {
     justify-content: center;
     align-items: center;
     vertical-align: middle;
-    padding: 1rem;
+    padding: 0rem;
 }
 
 .automatic-feedback-generator {
@@ -38,7 +35,6 @@ body {
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: black;
     border-radius: 1rem;
     overflow: hidden;
 }
@@ -48,15 +44,14 @@ body {
     grid-template-rows: repeat(2, 1fr);
     overflow-y: auto;
 
-    background-color: var(--dark-blue);
     padding: 1rem;
     border-radius: 0 1rem 1rem 0;
 }
 
 h1 {
-    font: 600 1.2rem sans-serif;
+    font: 500 1.2rem sans-serif;
     margin: 1rem 0;
-    color: #fff;
+    color: black;
 }
 
 h1 > img {
@@ -72,10 +67,10 @@ h1 > img {
 .problem-description textarea {
     width: 100%;
     height: calc(100% - 4rem);
-    border: none;
     padding: 1rem;
     font-size: 1.1rem;
     resize: vertical;
+    border-radius: .5rem;
 }
 
 .problem-description textarea::-webkit-scrollbar {
@@ -99,6 +94,7 @@ h1 > img {
     border: none;
     border-radius: .2rem;
     font-weight: 500;
+    margin-top: .5rem;
 }
 
 .program-testcase-btn button:hover{
@@ -116,7 +112,7 @@ h1 > img {
     margin: 1rem;
 }
 
-.generate-feedback-btn button {
+.generate-feedback-btn-spin {
     padding: .7rem;
     background-color: #08921D;
     color: white;
@@ -125,19 +121,21 @@ h1 > img {
     font-weight: 500;
 }
 
-.generate-feedback-btn button:hover {
+.generate-feedback-btn-spin:hover {
     background-color: #0A3A0A;
 }
+
 
 .editor {
     width: 100%;
     height: 68vh;
+    border: 1px solid black;
+    border-radius: .3rem;
 }
 
 .wrong-program-description {
     margin: 1rem 0;
     font: 600 1.2rem sans-serif;
-    color: white;
 }
 
 .wrong-program-description img {

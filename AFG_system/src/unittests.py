@@ -86,6 +86,7 @@ class RunUnitTest:
             runner = unittest.TextTestRunner(streamc = StringIO())
             runner.resultclass = TextTestResult
             res = runner.run(suite)
+            print(res)
             Results.status = res.status
             Results.output = res.output
         except Exception as e:

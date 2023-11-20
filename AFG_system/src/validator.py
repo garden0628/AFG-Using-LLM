@@ -23,6 +23,7 @@ class Validator:
         extracted = self.extract_code(code)
         if extracted:
             code = regularize(extracted)
+        print(self.tester.testsuite)
         for testcase in self.tester.testsuite:
             self.tester.run(code, testcase, Validating)
             testcase_no = testcase['testcase_no']

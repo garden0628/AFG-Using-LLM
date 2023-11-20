@@ -6,7 +6,7 @@ from AFG_system.src.results import Results
 class Locator:
     def __init__(self, tester:Tester, success:str='Success'):
         self.tester = tester
-        self.success = success
+        self.__success = success
         
     def __tarantula(self, code:str, test_hist:dict, trace_hist:dict) -> dict:
         total_pass, total_fail= 0, 0
@@ -19,7 +19,7 @@ class Locator:
             
         for testcase_no, status in test_hist.items():
             for lineno in set(trace_hist[testcase_no]):
-                if status != self.success:
+                if status != self.__success:
                     total_fail += 1
                     fail_cnt_dict[lineno] += 1
                 else:
@@ -51,7 +51,7 @@ class Locator:
             test_hist[testcase_no] = Results.status
             trace_hist[testcase_no] = Results.exec_traces
 
-            if Results.status != self.success:
+            if Results.status != self.__success:
                 failed_tcs.append(testcase)
 
         stmt_list = get_stmt_list(code)

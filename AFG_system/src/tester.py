@@ -1,3 +1,6 @@
+import warnings
+warnings.filterwarnings("ignore")
+
 from AFG_system.src.testsuite import TestSuite
 from AFG_system.src.utils import regularize, get_stmt_list
 from AFG_system.src.results import Results

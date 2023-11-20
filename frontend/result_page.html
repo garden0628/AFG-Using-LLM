@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/result_page_style.css">
+    <script defer src="js/result_page.js"></script>
+    <title>Automatic Feedback Generation</title>
+</head>
+<body>
+    <div class="system-title">
+        <div>Automatic Feedback Generator Using LLM</div>
+    </div>
+    <div class="main-content">
+
+        <div class="description">
+            <h1><img src="images/edit-info.png" alt="">Problem Description</h1>
+            <textarea id="description-content"></textarea>
+        </div>
+
+        <div class="wrong-program">
+            <h1><img src="images/cross.png" alt="">Wrong Program</h1>
+            <div class="editor2" id="editor2"></div>
+        </div>
+
+        <div class="program">
+            <h1><img src="images/check.png" alt="">Patch Program</h1>
+            <div class="editor" id="editor"></div>
+        </div>
+
+        <div class="feedback">
+            <h1><img src="images/teacher.png" alt="">Program Feedback</h1>
+            <textarea class="feedback-content", id="feedback-content"></textarea>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/lib/ace.js"></script>
+    <script src="js/lib/theme-monokai.js"></script>
+</body>
+</html>

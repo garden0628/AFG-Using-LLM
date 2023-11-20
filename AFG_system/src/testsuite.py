@@ -21,3 +21,9 @@ class TestSuite:
             prints += f"Input: {testcase['input_tc']}\n"
             prints += f"Output: {testcase['output_tc']}\n"
         return prints
+    
+    def __len__(self):
+        return len(self.testcases)
+
+    def get_tc_no_list(self):
+        return [tc['testcase_no'] for tc in self.testcases]

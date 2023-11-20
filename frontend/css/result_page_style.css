@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: white;
+}
+
+.system-title {
+    font: 800 2.0rem sans-serif;
+    text-align: left;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    padding: .5rem;
+    width: 90vw;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    padding: 0rem;
+}
+
+.feedback-componenet {
+    width: 180vw;
+    height: 90vh;
+
+    display: flex;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+h1 {
+    font: 500 1.2rem sans-serif;
+    margin: 1rem 0;
+    color: black;
+}
+
+h1 > img {
+    width: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+
+.description {
+    height: 70vh;
+    width: 20vw;
+    margin: 3rem;
+}
+
+.description textarea {
+    width: 100%;
+    height: calc(100% - 4rem);
+    padding: 1rem;
+    font-size: 1.1rem;
+    resize: vertical;
+    border-radius: .5rem;
+}
+
+.description textarea::-webkit-scrollbar {
+    width: .4rem;
+}
+
+.description textarea::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: .4rem;
+}
+
+.wrong-program {
+    height: 70vh;
+    width: 20vw;
+    margin: 3rem;
+}
+
+.editor2 {
+    width: 100%;
+    height: calc(100% - 4rem);
+    border: 1px solid black;
+    border-radius: .3rem;
+}
+
+.program {
+    height: 70vh;
+    width: 20vw;
+    margin: 3rem;
+}
+
+.editor {
+    width: 100%;
+    height: calc(100% - 4rem);
+    border: 1px solid black;
+    border-radius: .3rem;
+}
+
+.feedback {
+    height: 70vh;
+    width: 20vw;
+    margin: 3rem;
+}
+
+.feedback-content {
+    width: 100%;
+    height: calc(100% - 4rem);
+    padding: 1rem;
+    font-size: 1.1rem;
+    resize: vertical;
+    border-radius: .5rem;
+}
+
+.feedback-content::-webkit-scrollbar {
+    width: .4rem;
+}
+
+.feedback-content::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: .4rem;
+}
